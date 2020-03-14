@@ -1,0 +1,388 @@
+header {
+    display: flex;
+    flex-flow: row  wrap; 
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px;
+    min-width: 500px;
+    background: #1825AA;
+    
+}
+
+
+nav ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style:none;  
+    align-items: center; 
+}
+header p  {
+    
+    align-items: center;
+}
+
+header p a {
+    display: flex;
+    align-self: flex-start;
+    padding-left: 2px;
+    width: fit-content;
+    align-items: center;
+}
+
+header p a img {
+    width: 70px;
+    height: 70px;
+    border-right: white 1px solid;
+    padding-right: 5px;
+}
+
+header nav ul li {
+   width: fit-content;
+   margin: auto 25px;
+   padding: 5px;
+}
+
+header nav ul li:hover {
+   border-radius: 5px;
+   background:linear-gradient(to right, #62951C, #E2F44A) ;
+}
+
+header nav ul li a, header p a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/*Proprietés du sous -menu langue*/
+.sousmenuLang ul {
+    display: none;
+    
+}
+
+header nav ul li:hover .sousmenuLang ul {
+    
+    display: flex;
+    list-style:none;  
+    align-items: center; 
+    background:white;
+    flex-flow: column nowrap;
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    border: white 1px solid;
+    border-radius: 5px;
+    margin: 2px;
+    padding-left: 5px;
+   
+    
+    
+}
+
+header nav ul li .sousmenuLang ul li {
+    
+    display: flex;
+    justify-content: center;
+    font-size: 0.7em;
+    border-bottom: 1px solid rgb(156, 156, 156) ;
+    
+}
+
+header nav ul li .sousmenuLang ul li a {
+    
+    text-decoration: none;
+    color: black;
+}
+
+header nav ul li:hover .sousmenuLang ul :last-child {
+    
+   border-bottom: none;
+    
+}
+
+body {
+ 
+   font-family: 'WorkSans-ExtraLight', Arial, sans-serif; 
+}
+
+
+.fan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 450px;
+    height: 40px;
+    border-radius: 5px;
+    background-image: linear-gradient(to left,#16FFF5,#3440FF );
+    color: white;
+}
+.duks, .dukl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+
+
+.open   {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fixer l'image de la maison en background, non scrolable ! */
+.imfx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('i/i15.jpg');
+    background-position: center ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 400px;
+   
+}
+
+.imfx p {
+    display: flex;
+    text-align: center;
+    font-size: 2em;
+    color: white;
+    text-shadow: #1825AA 3px 3px 3px;
+    margin: 10px auto;
+    background-color: rgba(24, 36, 170, 0.26);
+    max-width: 1000px;
+}
+
+.duba   {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 10px;                                                                                                     
+    width: 300px;
+    height: 300px;
+    border: 0.5px solid rgb(147, 141, 141);
+    border-radius: 8px;
+    background-color: rgba(24, 36, 170, 0.253);
+    color:  #1825AA;
+    box-shadow: 3px 3px 5px #1825AA;
+}
+
+.duba  p {
+    margin-left: 10px;
+}
+
+.plus {
+    width: 80px;
+    height: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #1825AA;
+    margin-right: 10px;
+}
+
+.plus  a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+/* rogner les images des maisons avec les bordures*/
+.pub {
+    width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+/* Mise en forme appliquée aux élements du footer !*/
+
+footer  {
+    background: #0B047B;
+    color: #fff;
+}
+
+
+footer .foo {
+    display: flex;
+    flex-flow:row wrap;  
+    justify-content:center ;
+    align-items: center;
+
+}
+footer .foo p a {
+    text-decoration: none;
+    color: white;
+}
+
+footer .suivi {
+   
+    border-left: 1px solid white;
+    margin: auto 1px ;
+    
+}
+footer .suivi p{
+    margin: 6px ;   
+}
+
+footer .foo div {
+   
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+        
+}
+
+footer :last-child {
+   
+    text-align: center;
+   padding-bottom: 0.5px;       
+}
+
+strong {
+   font-weight: normal; 
+   padding-right: 3px;
+   padding-left: 3px;
+   border-radius: 10px;
+   background:linear-gradient(to right, #62951C, #E2F44A) ;
+}
+
+@font-face {
+    font-family: 'WorkSans-ExtraLight';
+    src: url('i/WorkSans-ExtraLight.otf');
+
+}
+
+/*run the responsive*/
+@media all and (max-width: 710px) 
+{
+
+    header nav ul{
+        display: block;
+    }
+        
+    footer .foo {
+        display: block;
+        text-align: center;
+        padding-top: 2px;
+    }  
+
+    
+
+    footer  .suivi {
+   
+            border-left: none
+            
+        }
+    
+}
+
+/* Mise en forme Contact.html*/
+
+.champ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-position: center;
+        background-image: url('i/i15.jpg');
+        background-repeat: no-repeat;
+        margin: 30px auto;
+}
+
+
+.form {
+   
+        border-radius: 10px;
+        border: 1px solide white;
+        background-color: rgba(143, 143, 140, 0.466);
+        color: black;
+        width: 500px;
+        height: 750px;
+        font-size: 1.33em;
+        font-weight: bold;    
+       
+}
+
+.welc {
+        display: flex;
+        margin: 27px auto;
+        height: 40px;
+        border-radius: 5px;
+        width: fit-content;
+        padding: 5px;
+        align-items: center; 
+        background:linear-gradient(to right, #62951C, #E2F44A);
+}
+
+.input, .choix {
+
+        border-radius: 5px;
+        border: 10px solide rgb(117, 116, 121);
+        box-shadow: 2px 2px 2px rgb(117, 116, 121);
+        height: 40px;
+        width: 280px;
+        padding-left: 7px;
+        font-size: 1em;
+        background-color: rgba(255, 255, 255, 0.644);
+       
+}
+
+.choix{
+
+        height: 45px;
+        width: 284px;  
+}
+
+
+label {
+        display: flex;
+        justify-content: center;
+        align-content: center ;
+        margin-left: 75px;
+        width:27px;
+        height:27px;
+        border: whitesmoke 1px solid;
+        border-radius: 16px;
+        background:linear-gradient(to right, #62951C, #E2F44A);
+}
+
+.inputdate {
+    border-radius: 5px;
+    border: 10px solide rgb(117, 116, 121);
+    box-shadow: 2px 2px 2px rgb(117, 116, 121);
+    height: 40px;
+    width: 125px;
+    padding-left: 7px;
+    font-size: 1em;
+    background-color: rgba(255, 255, 255, 0.644);
+}
+
+#submite {
+
+        border-radius: 5px;
+        outline: none;
+        width: 80px;
+        height: 36px;
+        margin-top: 10px;
+        background:linear-gradient(to right, #62951C, #E2F44A);
+        
+}
+
+.foocontact  p {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    text-align: center;
+    margin: 0px auto;
+}

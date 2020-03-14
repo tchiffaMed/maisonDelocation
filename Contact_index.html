@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Maison_style.css">
+</head>
+
+<body class="contact">
+
+    <div class="champ">
+        <div class="form">
+            <p class="welc">Reservez votre place dès aujourd'hui</p>
+    
+                <label for="nom">1</label><input type="text" name="nom" id="nom" placeholder="Saisir votrenom" maxlength="50" size="10" autofocus required class="input"/> <br/> <br/>
+
+                  <label for="Contact">2</label><input type="mail" name="mail" placeholder="Votre contact/Email"id="email" maxlength="50" size="10" required class="input"/> <br/> <br/>
+
+                     <label for="telphone">3</label><input type="tel" name="telephone" placeholder="Numéro de telephone" id="telphone" class="input"> <br><br>
+
+                     <label for="piece">4</label><input type="text" name="piece" placeholder="Pièce d'identité valide" id="piece" class="input"> <br><br>
+                      
+            
+                <label for="chambre">5</label>
+                <select name="chambre" id="ch" class="choix">
+            
+                        <optgroup label="solo">
+                            <option value="reservation">Ma reservation ici</option>
+                            <option value="simple1">chambre unique simple</option>
+                            <option value="simple2">chambre salon simple</option>
+                            <option value="luxe1">chambre unique luxe</option>
+                            <option value="luxe2">chambre salon luxe</option>   
+                        </optgroup>
+
+                        <optgroup label="Toute la famille">
+                            <option value="emirat">2 chambres salon</option>
+                            <option value="dubai">3 chambres salon</option>
+                            <option value="pakistan">2 chambres salon luxe</option>
+                            <option value="Afganistan">3 chambres salon luxe</option>
+                        </optgroup>
+
+
+                </select>  <br> <br>
+
+                <label for="date">6</label><input type="date" value="Date arrivé" class="inputdate"/> <input type="date" class="inputdate"/><br> <br>
+
+                <a href="index.html"><input type="submit"  value="Envoyer" id="submite"></a>
+        </div>  
+
+    </div>
+
+    <footer class="foocontact">
+        <p>*Veuillez indiquez au point &nbsp; <strong>6</strong> &nbsp; (six) la&nbsp;<em>date d'arrivé</em>&nbsp;et la &nbsp; <em>date du depart</em>&nbsp;, merci d'avoir choisi notre service &nbsp;<strong> HayaaGida </strong>,&nbsp; au plaisir de vous revoir.</p>
+    </footer>
+
+</body>
+</html>
